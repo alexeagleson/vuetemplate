@@ -1,0 +1,4 @@
+// prem stands for  px to rem.
+@function prem($pxval, $base: $font-size-root) {
+  @return strip-unit($pxval) / $base * 1rem;
+}
